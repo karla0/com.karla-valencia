@@ -1,27 +1,41 @@
 import React from 'react';
 import {Divider, Grid, Link } from '@material-ui/core'
 
-import './css/NavBar.css'
 
 export default function NavBar() {
+
+    const styles = {
+        navbarLink: {
+          fontFamily: "Roboto",
+          color: "white",
+          padding: "1em"
+        },
+        navbarGrid: {
+            paddingBottom:"1em"
+        }
+      };
+
     return(
         <Grid container spacing={2} 
               direction='row' 
-              justify="center" >
+              justify="center" 
+              className="navbar-grid"
+              style={styles.navbarGrid}
+              >
             <Grid item>
-                <Link href="#">Home</Link>
+                <Link style={styles.navbarLink} href="#">Home</Link>
             </Grid>
             <Divider orientation="vertical" flexItem />
             <Grid item>
-                <Link href="#">Portfolio</Link>
+                <Link style={styles.navbarLink} className="navbar-link" href="#">Portfolio</Link>
             </Grid>
             <Divider orientation="vertical" flexItem />
             <Grid item>
-                <Link href="#">Bio</Link>
+                <Link style={styles.navbarLink} className="navbar-link" href="#">Bio</Link>
             </Grid>
             <Divider orientation="vertical" flexItem />
             <Grid item>
-                <Link href="#">Contact</Link>
+                <Link style={styles.navbarLink} className="navbar-link" href="#">Contact</Link>
             </Grid>
         </Grid>
     );
