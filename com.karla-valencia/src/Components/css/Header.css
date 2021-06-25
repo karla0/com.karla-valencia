@@ -1,0 +1,10 @@
+.header-grid{
+    background-color: coral;
+    align-items: center;
+    padding: .5em;
+}
+
+.header-title {
+    background-color: crimson;
+    padding: .5em;
+}
