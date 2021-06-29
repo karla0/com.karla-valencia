@@ -1,5 +1,5 @@
 import React from 'react';
-import {Divider, Grid, Link } from '@material-ui/core'
+import {Divider, Grid, Link, Typography } from '@material-ui/core'
 
 
 export default function NavBar() {
@@ -12,13 +12,22 @@ export default function NavBar() {
         },
         navbarGrid: {
             paddingBottom:"1em"
+        },
+        navbarName: {
+            color:"#FFFFFF",
+            margin: "2%",
+            borderBottom: "3px solid #FFFFFF",
+            justifyContent: "center"
+
         }
       };
 
     return(
-        <Grid container spacing={2} 
-              direction='row' 
-              justify="center" 
+        <Grid container justify="center" >
+        <Typography justify="center" variant="h4" style={ styles.navbarName}>Karla Valencia</Typography>
+        <Grid container spacing={2}
+              direction='row'
+              justify="center"
               className="navbar-grid"
               style={styles.navbarGrid}
               >
@@ -37,6 +46,7 @@ export default function NavBar() {
             <Grid item>
                 <Link style={styles.navbarLink} className="navbar-link" href="#">Contact</Link>
             </Grid>
+        </Grid>
         </Grid>
     );
 }
