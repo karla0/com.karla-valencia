@@ -24,7 +24,6 @@ export default function NavBar() {
 
     return(
         <Grid container justify="center" >
-        <Typography justify="center" variant="h4" style={ styles.navbarName}>Karla Valencia</Typography>
         <Grid container spacing={2}
               direction='row'
               justify="center"

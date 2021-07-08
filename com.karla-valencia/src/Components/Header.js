@@ -15,8 +15,9 @@ export default function Header() {
     headerText: {
           fontFamily: "Roboto",
           color: "white",
-          paddingBottom: "1em",
-          paddingTop: '.5em'
+          paddingTop: '.5em',
+          borderBottom: "3px solid #FFFFFF",
+          marginBottom: "10%"
         },
     headerGrid: {
         alignItems:"center",
